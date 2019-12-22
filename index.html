@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Video preview</title>
+		<link rel="stylesheet" href="https://vjs.zencdn.net/7.5.5/video-js.css" />
+	</head>
+	<body>
+		<style>
+			.vjs-control-bar .vjs-thumbnail {
+			  position: absolute;
+			  width: 158px;
+			  height: 90px;
+			  top: -100px;
+			  background-color: #000;
+			  display: none;
+			}
+		</style>
+
+		<input type="file" accept=".mp4" />
+		<video id="video" class="video-js vjs-default-skin" width="500" height="250" controls> 
+		    <source src="" type='video/mp4'>
+		</video>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://vjs.zencdn.net/7.5.5/video.js"></script>
+		<script src="video-thumbnail.js"></script>
+	</body>
+</html>
